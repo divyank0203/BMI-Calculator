@@ -19,7 +19,7 @@ form.addEventListener('click', function(e){
         result.innerHTML = "Please enter a valid weight "
     }
     
-    const ans = ((weight) / ((height/100)*(height/100)))
+    const ans = ((weight) / ((height/100)*(height/100))).toFixed(2)
     result.innerText = `Your BMI is ${ans}`
 
     return result
